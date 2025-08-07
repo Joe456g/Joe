@@ -1,0 +1,108 @@
+/* Reset some default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header h2 {
+  font-weight: normal;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Section styling */
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+section h3 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Project list styling */
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section ul li {
+  margin-bottom: 20px;
+}
+
+section ul li img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+/* Skills list styling */
+section ul li {
+  margin-bottom: 5px;
+}
+
+/* Form styling */
+form {
+  margin-top: 15px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #6e4848;
+}
+
+input[type="submit"] {
+  background-color: #222;
+  color: #805959;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #8d0f0f;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #791313;
+}

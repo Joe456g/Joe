@@ -1,84 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Joe's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Carter | Web & Graphic Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="particles-js"></div>
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">JOE KAMAU</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Header Section -->
-  <header>
-    <h1>Joe Kamau</h1>
-    <h2>Web Development & Graphics Student</h2>
-  </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Crafting Digital Experiences That Inspire</h1>
+                <p class="hero-subtitle">Web & Graphic Designer focused on creating beautiful, functional designs that tell your story</p>
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame"></div>
+            </div>
+        </div>
+    </section>
 
-  <!-- About Me Section -->
-  <section>
-    <h3 style="font-size: small;">About Me</h3> 
-    <p>
-      Hello! I'm Joe, a passionate student learning web development and graphic design.
-      I enjoy building websites and creating visual content that communicates effectively.
-      I'm currently exploring HTML, CSS, JavaScript, and tools like Photoshop and Figma.
-    </p>
-  </section>
+    <!-- About Section -->
+     <!-- About Section -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <img src="1.JPG" alt="Profile Picture">
+      </div>
+      <div class="about-text">
+        <h3>Joseph Kamau Gitau</h3>
+        <p>I’m a passionate Web Designer and Graphic Designer with an eye for creativity and detail. I create beautiful, functional, and user-friendly designs that leave a lasting impact. My work blends modern design trends with innovative solutions for every client.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Projects Section -->
-  <section>
-    <h3>Projects</h3>
-    <ul>
-      <li>
-        <h4>Personal Website</h4>
-        <img src="https://images.unsplash.com/photo-1587620931283-dcdb4c9285a4" alt="Project 1">
-        <p>A basic personal website built with HTML and CSS.</p>
-      </li>
-      <li>
-        <h4>Logo Design</h4>
-        <img src="https://via.placeholder.com/150" alt="Project 2">
-        <p>Created a logo for a local brand using Photoshop.</p>
-      </li>
-      <li>
-        <h4>Poster Design</h4>
-        <img src="https://via.placeholder.com/150" alt="Project 3">
-        <p>Designed an event poster using Figma and Canva.</p>
-      </li>
-    </ul>
-  </section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Alex Carter">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">About Me</h2>
+                <p class="about-text">With over 7 years of experience in both web and graphic design, I specialize in creating visually stunning and user-friendly digital experiences. My approach combines aesthetic sensibility with technical expertise to deliver designs that are both beautiful and functional.</p>
+                
+                <div class="skills">
+                    <h3>My Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill">UI/UX Design</div>
+                        <div class="skill">Web Development</div>
+                        <div class="skill">Brand Identity</div>
+                        <div class="skill">Print Design</div>
+                        <div class="skill">Motion Graphics</div>
+                        <div class="skill">Photography</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section>
-    <h3>Skills</h3>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript (basic)</li>
-      <li>Photoshop</li>
-      <li>Figma</li>
-      <li>Canva</li>
-    </ul>
-  </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Portfolio</h2>
+            <p class="section-subtitle">A selection of my recent work</p>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="Website Design">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-commerce Website</h3>
+                        <p>Modern online store with custom UI elements</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item" data-category="graphic">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="Brand Identity">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="portfolio-link"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Brand Identity</h3>
+                        <p>Complete branding package for startup</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Items 3-6 -->
+                <!-- [Additional portfolio items would follow the same pattern] -->
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section>
-    <h3>Contact</h3>
-    <p>Email: joekamau048@gmail.com</p>
-    <p>Phone: +254791 787 788</p>
-    <!-- Optional contact form (non-functional in HTML only) -->
-    <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name"><br><br>
-      
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message"></textarea><br><br>
-      
-      <input type="submit" value="Send">
-    </form>
-  </section>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <p class="section-subtitle">What I can do for you</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Custom website designs that are responsive, user-friendly, and visually compelling.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Intuitive interfaces with thoughtful user experiences that drive engagement.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Print and digital graphics that communicate your brand's message effectively.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Brand Identity</h3>
+                    <p>Complete branding solutions including logos, color schemes, and style guides.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer Section -->
-  <footer>
-    <p>&copy; 2025 Joe Kamau. All rights reserved.</p>
-  </footer>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">What my clients say about my work</p>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Alex transformed our online presence with a website that perfectly captures our brand identity. The attention to detail and user experience is exceptional."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <span>CEO, TechStart</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional testimonials would follow the same pattern -->
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's create something amazing together</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@alexcarter.design</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Portland, OR</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Alex Carter</h3>
+                    <p>Web & Graphic Designer creating digital experiences that inspire and engage.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Branding</a></li>
+                        <li><a href="#">UI/UX</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Alex Carter Design. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
